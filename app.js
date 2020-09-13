@@ -116,15 +116,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray) { //eslint-disable-line
-   /* var arr2=multiply(testArray[0],testArray[1]);
-    var x= arr2[0];
-    var y=x*testArray[2];
-    return [y,"The numbers 2,3,4 have a product of 24."];*/
+    var arr2=multiply(testArray[0],testArray[1]);
+    var x= multiply(arr2[0],testArray[2]);
+    
+    return  [x[0],"The numbers 2,3,4 have a product of 24." ];
 
 }
-//multiplyArray(testArray);
+multiplyArray(testArray);
 // Here is the test for multiplyArray(); uncomment it to run it
-//testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
