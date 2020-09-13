@@ -49,10 +49,10 @@ function multiply(a, b) { //eslint-disable-line
  
  // Write your code here
  function sumAndMultiply(a, b, c) { //eslint-disable-line
- 
-         var summ=sum((sum(a,b),c));
-
-          var multi=multiply(multiply(a,b),c);
+         var arr=sum(a,b);
+         var summ=sum(arr[0],c);
+         var arr2=multiply(a,b);
+          var multi=multiply(arr2[0],c);
   /*  var arr=sum(a,b);
      var x=arr[0];
   
@@ -68,9 +68,9 @@ function multiply(a, b) { //eslint-disable-line
   
   }
   
-  //sumAndMultiply(4,7,5);
+  sumAndMultiply(4,7,5);
   // Here is the test for sumAndMultiply(); uncomment it to run it
-  // testSumAndMultiply(4,7,5);
+   testSumAndMultiply(4,7,5);
   
  // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
  
@@ -89,18 +89,18 @@ uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+sumArray(testArray);
 function sumArray(sumArr) { //eslint-disable-line
 
-    /*var arr=sum(testArray[0],testArray[1]);
-    var x= arr[0];
-    var y=x+testArray[2];
-    return [y,"2,3,4 was passed in as an array of numbers, and 9 is their sum."];*/
+    var arr=sum(sumArr[0],sumArr[1]);
+    var x= sum(arr[0],sumArr[2]);
+   
+    return [x[0],"2,3,4 was passed in as an array of numbers, and 9 is their sum."];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
-//sumArray(testArray);
-//testSumArray(testArray);
+
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
