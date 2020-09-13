@@ -119,7 +119,7 @@ function multiplyArray(testArray) { //eslint-disable-line
     var arr2=multiply(testArray[0],testArray[1]);
     var x= multiply(arr2[0],testArray[2]);
     
-    return [x[0],"The numbers 2,3,4 have a product of 24."];
+    return  [x[0],"The numbers 2,3,4 have a product of 24." ];
 
 }
 multiplyArray(testArray);
